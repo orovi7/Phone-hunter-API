@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = 'light'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phon hunter API</title>
+    <!-- tailwind and daisyui -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl my-10">Hunting phon</h1>
+        <!-- <button class="btn" onclick="loadPhon()">Load this</button> -->
+    </header>
+    <main class="container mx-auto">
+
+      <!-- search section here -->
+       <section class="bg-gray-100 p-4 m-4">
+        <input id="input-field" type="text" placeholder="Search your phone" class="input input-ghost my-6 bg-[#706F6F33] w-full max-w-xs"/>
+        <button onclick="handleSearchButton()" class="btn bg-[#0D6EFD] border-none font-bold text-lg btn-active btn-secondary">Search</button>
+
+        <!-- another search field -->
+         <!-- <input type="text" id="search-field2" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+         <button onclick="handleSearch2()" class="btn btn-primary">Search</button>
+       </section> -->
+
+
+ 
+
+        <!-- card sec -->
+      <section>
+        <!-- spinner or loader -->
+      <div class="text-center my-20 hidden" id="loading-spinner">
+       <span class="loading loading-dots text-primary loading-lg"></span>
+      </div>
+    <!-- card here -->
+           <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      </div>
+
+    <!-- show all button -->
+     <div id="show-all-container" class="hidden text-center">
+      <button class="btn btn-accent">Show all</button>
+     </div>
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="scripts/phone.js"></script>
+</body>
+</html>
